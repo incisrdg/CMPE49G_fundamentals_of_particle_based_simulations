@@ -6,6 +6,6 @@ Buffon's Needle problem, one of the earliest problems in geometric probability, 
 
 Let’s first dive into the analytical solution of the problem.
 
-Revisit the question: Given a needle of length l dropped on a plane ruled with parallel lines D units apart, what is the probability that the needle will lie across a line between two strips?
+Revisit the question: Given a needle of length l dropped on a plane ruled with parallel lines D units apart, what is the probability that the needle will lie across a line between two strips? In part a, needle B represents the expected condition.
 
-Assume that the needles are made of a homogeneous material. Let x be the distance from the center of mass (COM) of the needle to the closest parallel line, and let θ be the angle between the needle and the parallel line axis.
+Assume that the needles are made of a homogeneous material. Let x be the distance from the center of mass (COM) of the needle to the closest parallel line, and let θ be the angle between the needle and the parallel line axis. 
