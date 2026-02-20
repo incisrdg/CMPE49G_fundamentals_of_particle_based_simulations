@@ -8,4 +8,6 @@ Let’s first dive into the analytical solution of the problem.
 
 Revisit the question: Given a needle of length l dropped on a plane ruled with parallel lines D units apart, what is the probability that the needle will lie across a line between two strips? In part a, needle B represents the expected condition.
 
-Assume that the needles are made of a homogeneous material. Let x be the distance from the center of mass (COM) of the needle to the closest parallel line, and let θ be the angle between the needle and the parallel line axis. 
+Assume that the needles are made of a homogeneous material. Let x be the distance from the center of mass (COM) of the needle to the closest parallel line, and let θ be the angle between the needle and the parallel line axis. The probability that the needle intersects a line depends on these two variables: x and θ.
+
+Focusing on a single reference line, the probability density function (PDF) of x is defined over the interval 0 (part b, needle B where the COM lies on the line) to D/2 (part b, needle A where the needle is centered midway between two lines), and is given as in part b. For the second variable, θ, the probability density function (PDF) is defined over the interval 0 (part c, needle A lying parallel to the line) to π/2 (part c, needle B rotated by θ from the line), and is given as in part c. Since x and 0 are two independent random variables, the joint probability density function can be written as the product using the multiplication rule: P(A∩B)=P(A)×P(B).
