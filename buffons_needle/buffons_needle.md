@@ -12,7 +12,17 @@ Focusing on a single reference line, the probability density function (PDF) of x
 
 <img width="1713" height="1384" alt="Not 19 Şub 2026 20_54_54" src="https://github.com/user-attachments/assets/7c04b4f2-8b85-4bc8-8963-141bb686a840" />
 
-Based on the analytical solution derived above, we can use a Monte Carlo simulation of the crossing probability (p=2L/Dπ) to estimate the value of π. The script buffons_needle_part1 simulates the system for 10^2, 10^3, 10^4, 10^5, and 10^6 needles and track the number of needles that are crossing one of the lines to evaluate the probability of crossing a line using monte Carlo. 
+Based on the analytical solution derived above, we can use a Monte Carlo simulation of the crossing probability (p=2L/Dπ) to estimate the value of π. The script buffons_needle_part1 simulates the system with 10², 10³, 10⁴, 10⁵, and 10⁶ needles and tracks how many cross a line to estimate the crossing probability using Monte Carlo simulation. Results are given below.
+
+<img width="5670" height="4013" alt="buffons_needle_part1" src="https://github.com/user-attachments/assets/290be4c0-d8b7-4c78-b6a9-8abf1b594a14" />
+
+N	Pi_L=0.25, D=2.0	Pi_L=0.5, D=2.0	Pi_L=1.0, D=2.0	Pi_L=0.25, D=0.5	Pi_L=0.25, D=1.0	Pi_L=2.0, D=4.0	Pi_L=6.0, D=8.0
+100	2.083333	2.941176	2.857143	3.333333	1.923077	3.846154	2.830189
+1,000	2.808989	2.994012	3.174603	3.154574	3.378378	2.994012	3.118503
+10,000	3.136763	3.046923	3.155570	3.170577	3.103662	3.119152	3.151923
+100,000	3.196114	3.124609	3.151194	3.146237	3.161755	3.133912	3.156034
+1,000,000	3.121021	3.130694	3.142164	3.145416	3.142283	3.145168	3.142697
+
 
 
 
