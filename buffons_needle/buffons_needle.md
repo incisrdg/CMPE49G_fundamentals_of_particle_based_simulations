@@ -12,17 +12,15 @@ Focusing on a single reference line, the probability density function (PDF) of x
 
 <img width="1713" height="1384" alt="Not 19 Şub 2026 20_54_54" src="https://github.com/user-attachments/assets/7c04b4f2-8b85-4bc8-8963-141bb686a840" />
 
-Based on the analytical solution derived above, we can use a Monte Carlo simulation of the crossing probability (p=2L/Dπ) to estimate the value of π. The script buffons_needle_part1 simulates the system with 10², 10³, 10⁴, 10⁵, and 10⁶ needles and tracks how many cross a line to estimate the crossing probability using Monte Carlo simulation. Results are given below.
+Based on the analytical solution derived above, we can use a Monte Carlo simulation of the crossing probability (P=2L/Dπ) to estimate the value of π. The script buffons_needle_part1 simulates the system with 10², 10³, 10⁴, 10⁵, and 10⁶ needles and tracks how many cross a line to estimate the crossing probability using Monte Carlo simulation. Results are given below.
 
 <img width="5670" height="4013" alt="buffons_needle_part1" src="https://github.com/user-attachments/assets/290be4c0-d8b7-4c78-b6a9-8abf1b594a14" />
 
-N	Pi_L=0.25, D=2.0	Pi_L=0.5, D=2.0	Pi_L=1.0, D=2.0	Pi_L=0.25, D=0.5	Pi_L=0.25, D=1.0	Pi_L=2.0, D=4.0	Pi_L=6.0, D=8.0
-100	2.083333	2.941176	2.857143	3.333333	1.923077	3.846154	2.830189
-1,000	2.808989	2.994012	3.174603	3.154574	3.378378	2.994012	3.118503
-10,000	3.136763	3.046923	3.155570	3.170577	3.103662	3.119152	3.151923
-100,000	3.196114	3.124609	3.151194	3.146237	3.161755	3.133912	3.156034
-1,000,000	3.121021	3.130694	3.142164	3.145416	3.142283	3.145168	3.142697
+<img width="2724" height="642" alt="buffons_needle_part1_table" src="https://github.com/user-attachments/assets/5ea24f1f-6b85-4e1d-b1ba-39506619f6fb" />
 
+Monte Carlo simulations across seven distinct L and D configurations provide an empirical validation of the analytical solution for Buffon’s Needle problem in part 1, which states that the probability (P) of a needle crossing a line is 2L/Dπ for L≤D. By tracking the number of crossing needles across five orders of magnitude (10², 10³, 10⁴, 10⁵, and 10⁶), the data shows a classic convergence toward this theoretical limit.
 
+At the lowest replication count of n=100, the estimates for π are highly volatile and exhibit noise, with values ranging from a low of 1.923077 (L=0.25,D=1.0) to a high of 3.846154 (L=2.0,D=4.0). This stochastic fluctuation is expected due to the inherent variance in small-sample Monte Carlo simulations where short-term probabilistic deviations from the expected mean can disproportionately skew the results. However, as the law of large numbers takes effect, the fluctuations dampen significantly; by n=10⁴, the estimation results begin to cluster around the true value of ~3.14159, and by n=10⁶, every single tested configuration converges well with accurate approximation of π.
 
+Specifically, the L=1.0,D=2.0 setup at 10⁶ needles yielded a π estimate of 3.142164, representing a minute relative error. These results confirm that while different L and D ratios shift the baseline probability, as seen in the first plot where probabilities range from approximately 0.08 to 0.48, the underlying relationship P∝1/π remains invariant. The simulation effectively demonstrates that increasing the sample size is the main driver for precision, successfully filtering out stochastic noise to reveal the underlying mathematical constant.
 
