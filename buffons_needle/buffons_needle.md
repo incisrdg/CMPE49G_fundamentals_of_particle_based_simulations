@@ -49,7 +49,7 @@ The coordinates of the needle's two endpoints (d1 and d2), relative to the cente
 
 ![buffons_needle_2](https://github.com/user-attachments/assets/2862931b-8e67-43aa-a979-9ffab7b97322)
 
-Fig. 3
+Fig. 3: Analytical solution for the modern version of Buffon's Needle Problem
 
 A needle crosses a circle of radius R only if one of the endpoints is inside the circle and the other is outside the circle. For crossing condition, d2<R<d1 (for cosθ>0) needs to be satisfied (Fig.3b). Squaring the calculated distances to simplify the solution leads to inequality in Fig.3b. Isolating the angular term shows that a crossing occurs only if the critical angle for 0 obeys the given inequality in Fig.3b. From the critical 0 condition, it can be observed that the "success" range for the angle θ depends on the radial distance r. For a fixed r near a circle of radius R, the probability that the needle crosses that specific circle is the ratio of favorable angles to the total possible range of angles (0 to 2π due to symmetry). This probability can be calculated by multiplying critical angle 0 with 4 and then dividing into the total probability 2π given in Eq.2. The multiplication by 4 comes from the symmetry of the circle and the needle's orientation. When you drop a needle, it can land at any angle θ between 0 and 2π. However, because a needle is symmetric, in other words, the "head" and the "tail" are identical, a needle at angle θ is physically the same as a needle at θ+π. This immediately reduces the domain of the problem to a range of π. We can simplify this even further. Whether the needle points "up and right" or "down and right," the crossing condition remains the same this time due to the horizontal symmetry of the radial line r. Therefore, we can define the "total possible angles" in our simplified model using a single quadrant as the domain: 0 to π/2 (Eq.2).
 
@@ -59,4 +59,14 @@ Eq.2
 
 Once we obtained the local probability in Eq.2, we can calculate the total probability P, by averaging the local probability over all possible positions r. Since the needle center is equally likely to land anywhere in the area between two circles, we integrate across the radial zone and divide by the total distance D. The integration is performed over the interval (R−L/2,R+L/2), representing a physical range of all possible positions of the needle center r where a crossing of a circle with radius R is geometrically possible. Based on this integration, pay attention that as R becomes very large, the curvature of the concentric circles becomes negligible, acting like parallel strips, and this integral converges to the probability of P= 2l/πD found in the classical solution (Fig.1).
 ​	
+<img width="5200" height="3566" alt="buffons_needle_part2" src="https://github.com/user-attachments/assets/48ce3bf1-15b5-495c-a0cf-7ca08e74b9f0" />
+
+Fig. 4: π estimation and probability results for l/D pairs, calculated across five orders of magnitude of needle counts.
+
+The Monte Carlo simulation results (script can be found ( [here](https://github.com/incisrdg/CMPE49G_fundamentals_of_particle_based_simulations/blob/main/buffons_needle/buffons_needle_part1.ipynb) ) for the concentric circle system demonstrate a clear convergence toward the theoretical analytical solutions as the number of replications increases in Fig.4. At low needle counts, significant fluctuations are visible in both the crossing probability (P) and the π estimation, reflecting high statistical variance. However, as the sample size increases, the estimated values stabilize and align closely with the theoretical probability P=2L/Dπ. This trend confirms that despite the circular geometry, the system behaves predictably in an infinite-size sheet, where the curvature becomes locally negligible and acts linearly for very large radii. The final π estimates for all (L,D) pairs asymptotically approach the true value of π≈3.14159, validating the robustness of the simulation approach and the geometric derivation based on needle tip distances (Table 2).
+
+Table 2
+
+<img width="472" height="143" alt="Screenshot 2026-03-04 at 06 38 30" src="https://github.com/user-attachments/assets/65316470-f655-4739-af4e-3d07fc59dca3" />
+
 
