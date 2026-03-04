@@ -45,7 +45,16 @@ In the classical Buffon’s Needle problem, we used the center of the needle and
 
 - R: The radius of a specific circle in the concentric set.
 
+The coordinates of the needle's two endpoints (d1 and d2), relative to the center of the circles can be calculated as given in Fig. 3a and the distances of the end points from the origin. 
 
+![buffons_needle_2](https://github.com/user-attachments/assets/2862931b-8e67-43aa-a979-9ffab7b97322)
 
+Fig. 3
 
+A needle crosses a circle of radius R only if one of the endpoints is inside the circle and the other is outside the circle. For crossing condition, d2<R<d1 (for cosθ>0) needs to be satisfied (Fig.3b). Squaring the calculated distances to simplify the solution leads to inequality in Fig.3b. Isolating the angular term shows that a crossing occurs only if the critical angle for 0 obeys the given inequality in Fig.3b. From the critical 0 condition, it can be observed that the "success" range for the angle θ depends on the radial distance r. For a fixed r near a circle of radius R, the probability that the needle crosses that specific circle is the ratio of favorable angles to the total possible range of angles (0 to 2π due to symmetry). This probability can be calculated by multiplying critical angle 0 with 4 and then dividing into the total probability 2π given in Eq.2. The multiplication by 4 comes from the symmetry of the circle and the needle's orientation. When you drop a needle, it can land at any angle θ between 0 and 2π. However, because a needle is symmetric, in other words, the "head" and the "tail" are identical, a needle at angle θ is physically the same as a needle at θ+π. This immediately reduces the domain of the problem to a range of π. We can simplify this even further. Whether the needle points "up and right" or "down and right," the crossing condition remains the same this time due to the horizontal symmetry of the radial line r. Therefore, we can define the "total possible angles" in our simplified model using a single quadrant as the domain: 0 to π/2 (Eq.2).
 
+<img width="393" height="55" alt="Screenshot 2026-03-04 at 05 25 10" src="https://github.com/user-attachments/assets/bb94d6ae-a9af-43f4-8bac-5fec441e3329" />
+
+Eq.2
+
+Once we obtained the local probability in Eq.2, we can calculate the total probability P, by averaging the local probability over all possible positions r. Since the needle center is equally likely to land anywhere in the area between two circles, we integrate across the radial zone and divide by the total distance D. The integration is performed over the interval [R−L/2,R+L/2], representing a physical range of all possible positions of the needle center r.
