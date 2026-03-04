@@ -22,9 +22,10 @@ Eq.1
 Fig.2: π estimation and probability results for seven l/D pairs, calculated across five orders of magnitude of needle counts.
 
 Based on the analytical solution derived above, we can use a Monte Carlo simulation of the crossing probability (2l/πD) to estimate the value of π. The script [here](https://github.com/incisrdg/CMPE49G_fundamentals_of_particle_based_simulations/blob/main/buffons_needle/buffons_needle_part1.ipynb) simulates the system with 10^2, 10^3, 10^4, 10^5, and 10^6 needles and estimates the crossing probability using Monte Carlo simulation. Results are given Fig.2. Monte Carlo simulations across seven distinct l and D pairs provide an empirical validation of the analytical solution for Buffon’s Needle Problem discussed above, where the probability of crossing a line is 2l/πD for l≤D. By tracking the number of needles across five orders of
-magnitude (10^2, 10^3, 10^4, 10^5, and 10^6), the data shows a classic convergence toward the theoretical value in Fig.2 below and Table 1. At the lowest replication count of n=100,π estimation is highly volatile and exhibiting noise. This stochastic fluctuation is expected due to the inherent variance in small-sample Monte Carlo simulations. However, as the law of large sample size takes effect, the fluctuations dampen significantly, converging well with
+magnitude (10^2, 10^3, 10^4, 10^5, and 10^6), the data shows a classic convergence toward the theoretical value in Fig.2 below and Table 1. At the lowest replication count of n=100, π estimation is highly volatile and exhibiting noise. This stochastic fluctuation is expected due to the inherent variance in small-sample Monte Carlo simulations. However, as the law of large sample size takes effect, the fluctuations dampen significantly, converging well with
 accurate approximation of π (Table 1). Specifically, the l=1.0, D=2.0 setup at 106 needles estimated π as 3.142164, representing a minute error. Additionally, Fig.2 above shows that the probability is governed by the ratio l/D rather than the individual values; cases with the same ratio produce overlapping probability curves.
 
 Table 1:  Convergence of π estimates
+
 <img width="481" height="124" alt="Screenshot 2026-03-04 at 05 10 40" src="https://github.com/user-attachments/assets/16bc80de-2d6a-49c5-a1ce-8980419434be" />
 
