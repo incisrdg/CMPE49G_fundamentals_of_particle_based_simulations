@@ -57,4 +57,6 @@ A needle crosses a circle of radius R only if one of the endpoints is inside the
 
 Eq.2
 
-Once we obtained the local probability in Eq.2, we can calculate the total probability P, by averaging the local probability over all possible positions r. Since the needle center is equally likely to land anywhere in the area between two circles, we integrate across the radial zone and divide by the total distance D. The integration is performed over the interval [R−L/2,R+L/2], representing a physical range of all possible positions of the needle center r.
+Once we obtained the local probability in Eq.2, we can calculate the total probability P, by averaging the local probability over all possible positions r. Since the needle center is equally likely to land anywhere in the area between two circles, we integrate across the radial zone and divide by the total distance D. The integration is performed over the interval (R−L/2,R+L/2), representing a physical range of all possible positions of the needle center r where a crossing of a circle with radius R is geometrically possible. Based on this integration, pay attention that as R becomes very large, the curvature of the concentric circles becomes negligible, acting like parallel strips, and this integral converges to the probability of P= 2l/πD found in the classical solution (Fig.1).
+​	
+
