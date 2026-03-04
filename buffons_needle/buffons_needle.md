@@ -12,6 +12,9 @@ Let’s first dive into the analytical solution of the problem. Revisit the ques
 <img width="5670" height="4014" alt="prob" src="https://github.com/user-attachments/assets/73308234-7ce2-40f0-b3be-aacb5c495a18" />
 Fig.2
 
+
+
+
 <img width="562" height="64" alt="Screenshot 2026-03-04 at 05 05 41" src="https://github.com/user-attachments/assets/f0e941ab-1c06-495a-913f-790c1766bd50" />
 Eq.1
 
