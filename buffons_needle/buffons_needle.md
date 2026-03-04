@@ -20,3 +20,4 @@ Integrating the joint probability density function over dx and dθ (for l≤D) y
 
 Eq.1
 
+Based on the analytical solution derived above, we can use a Monte Carlo simulation of the crossing probability (2l/πD) to estimate the value of π. The script below simulates the system with 10^2, 10^3, 10^4, 10^5, and 10^6 needles and estimates the crossing probability using Monte Carlo simulation. Results are given below.
