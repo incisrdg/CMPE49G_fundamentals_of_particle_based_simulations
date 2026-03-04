@@ -29,3 +29,7 @@ Table 1:  Convergence of π estimates
 
 <img width="481" height="124" alt="Screenshot 2026-03-04 at 05 10 40" src="https://github.com/user-attachments/assets/16bc80de-2d6a-49c5-a1ce-8980419434be" />
 
+
+## Modern-revisited Version 
+
+
