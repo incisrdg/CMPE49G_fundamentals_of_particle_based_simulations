@@ -30,6 +30,11 @@ Table 1:  Convergence of π estimates
 <img width="481" height="124" alt="Screenshot 2026-03-04 at 05 10 40" src="https://github.com/user-attachments/assets/16bc80de-2d6a-49c5-a1ce-8980419434be" />
 
 
-## Modern-revisited Version 
+## Modern/Revisited Version 
+
+In this case, instead of assuming a floor made of parallel strips of wood separated by equal widths as given in the classical version of the problem, we are going to consider an infinite-size sheet of paper containing con-centric circles radiating from the center and we will drop again a needle of size l randomly to the floor, where the smallest circle has a radius equal to 𝐷 and the distance between consecutive circles is 𝐷  (i.e., radii of the following circles are 2𝐷, 3𝐷, 4𝐷, …) with satisfying 𝐿 < 𝐷). Rain frops would be a well-suited analogy for such a setup.
+
+![604c375392238df7dca063726db65555](https://github.com/user-attachments/assets/dc24f2af-e066-49df-865e-cdd0ff35f247)
+
 
 
