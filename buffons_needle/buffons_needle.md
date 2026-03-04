@@ -37,4 +37,15 @@ In this case, instead of assuming a floor made of parallel strips of wood separa
 ![604c375392238df7dca063726db65555](https://github.com/user-attachments/assets/dc24f2af-e066-49df-865e-cdd0ff35f247)
 
 
+In the classical Buffon’s Needle problem, we used the center of the needle and its distance to the nearest parallel line because the geometry is linear and periodic. However, for the modern version of the problem, we will use the tips (d1 and d2) instead of the COM since the concentric circles breaks the linearity and requires coordinate transformation. For analytical approach to the modern problem, we will define the position of a needle of length l (where l≤D) using following three parameters:
+
+- r: The radial distance from the center of the concentric circles to the midpoint of the needle.
+
+- θ: The angle the needle makes with the radial vector pointing to its center.
+
+- R: The radius of a specific circle in the concentric set.
+
+
+
+
 
